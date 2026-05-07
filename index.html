@@ -3,6 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>링크 연결</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#f3f4f6;
+      font-family:sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:420px;
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+    }
+
+    .link-btn{
+      display:block;
+      width:100%;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 4px 12px rgba(0,0,0,0.12);
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+
+    .link-btn:active{
+      transform:scale(0.97);
+      box-shadow:0 2px 8px rgba(0,0,0,0.18);
+    }
+
+    .link-btn img{
+      width:100%;
+      display:block;
+    }
+
+    @media (max-width:480px){
+      body{
+        padding:14px;
+      }
+
+      .container{
+        gap:12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- 카카오톡 -->
+    <a class="link-btn"
+       href="https://open.kakao.com/o/본인링크"
+       target="_blank">
+      <img src="kakao.png" alt="카카오톡 연결">
+    </a>
+
+    <!-- 텔레그램 -->
+    <a class="link-btn"
+       href="https://t.me/본인아이디"
+       target="_blank">
+      <img src="telegram.png" alt="텔레그램 연결">
+    </a>
+
+  </div>
+
+</body>
+</html>
   <title>Kusystruska Agency</title>
   <style>
     body {
