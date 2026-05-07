@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>링크 버튼</title>
+  <title>광고 페이지</title>
 
   <style>
     body {
       margin: 0;
-      padding: 40px;
+      padding: 30px;
       background: #efefef;
       font-family: sans-serif;
       text-align: center;
     }
 
+    /* 상단 버튼 */
     .button-wrap {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 30px;
       flex-wrap: wrap;
+      margin-bottom: 40px;
     }
 
     .link-btn img {
-      width: 350px;   /* 원하는 크기로 변경 가능 */
+      width: 320px;
       max-width: 100%;
       transition: 0.2s;
       cursor: pointer;
@@ -31,25 +33,70 @@
     .link-btn img:hover {
       transform: scale(1.03);
     }
+
+    /* 메인 광고 이미지 */
+    .main-image {
+      margin-bottom: 50px;
+    }
+
+    .main-image img {
+      width: 700px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    /* 하단 버튼 */
+    .bottom-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
   </style>
 </head>
 
 <body>
 
+  <!-- 상단 버튼 -->
   <div class="button-wrap">
 
-    <!-- 텔레그램 버튼 -->
+    <!-- 텔레그램 -->
     <a class="link-btn"
-       href="https://t.me/여기에텔레그램링크"
+       href="https://t.me/아이디"
        target="_blank">
-      <img src="텔레2.png" alt="텔레그램 연결">
+      <img src="텔레2.png" alt="텔레그램">
     </a>
 
-    <!-- 카카오톡 버튼 -->
+    <!-- 카카오톡 -->
     <a class="link-btn"
-       href="https://open.kakao.com/o/여기에카톡링크"
+       href="https://open.kakao.com/o/코드"
        target="_blank">
-      <img src="카톡2.png" alt="카카오톡 연결">
+      <img src="카톡2.png" alt="카카오톡">
+    </a>
+
+  </div>
+
+  <!-- 메인 이미지 -->
+  <div class="main-image">
+    <img src="애드워즈2.png" alt="광고 이미지">
+  </div>
+
+  <!-- 하단 버튼 -->
+  <div class="bottom-buttons">
+
+    <!-- 텔레그램 -->
+    <a class="link-btn"
+       href="https://t.me/아이디"
+       target="_blank">
+      <img src="텔레2.png" alt="텔레그램">
+    </a>
+
+    <!-- 카카오톡 -->
+    <a class="link-btn"
+       href="https://open.kakao.com/o/코드"
+       target="_blank">
+      <img src="카톡2.png" alt="카카오톡">
     </a>
 
   </div>
